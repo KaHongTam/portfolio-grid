@@ -1,8 +1,9 @@
 // function([string1, string2],target id,[color1,color2])    
 var tekst1 = "Hello World.";
 var tekst2 = "Console Text";
-// var tekst3 = "<script="+ &#34 +
-consoleText(['Hello World.', 'Console Text', 'function();'], 'text',['tomato','darkviolet','lightblue']);
+var tekst3 = "function typeWriter(); {";
+
+consoleText([tekst1, tekst2, tekst3], 'text',['tomato','darkviolet','lightblue']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -11,7 +12,7 @@ function consoleText(words, id, colors) {
   var letterCount = 1;
   var x = 1;
   var waiting = false;
-  var target = document.getElementById(id)
+  var target = document.getElementById(id);
   target.setAttribute('style', 'color:' + colors[0])
   window.setInterval(function() {
 
