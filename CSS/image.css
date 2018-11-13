@@ -1,0 +1,155 @@
+body {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden;
+    font-family: 'Stint Ultra Expanded', cursive;
+}
+
+.container {
+    height:100vh;
+    width:100vw;
+    display: grid;
+    grid-template-columns: 1fr 10% 1000px 10% 1fr;
+    grid-template-rows: 50px 50px 50px 20px 1fr 20px 1fr 50px 30px;
+    grid-gap: 2px;
+    background-image: url(../Images/background_code.jpg);
+    background-size: cover;
+}
+
+/* Het tonen van de grid */
+/* .griddisplay {
+    border-width: 1px;
+    border-style: solid;
+} */
+
+.nav {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #00000038;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: #53484867;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    
+}
+
+li a{
+    display: inline-block;
+    color: #f5f5dc;
+    padding: 15px 45px;
+    text-decoration: none;
+    
+}
+
+li a:hover {
+    color: #f5f5dc;
+    background-color: #61738175;
+    border-radius: 5px;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    grid-column: 3/4;
+    grid-row: 5/8;
+  }
+
+.mySlides {
+    padding: 90px;
+    opacity: 0.99;
+    transition: transform 0.5s;
+}
+
+.mySlides:hover {
+    transform: scale(1.2);
+    opacity: 0.95;
+}
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    margin-left: -42px;
+    top: 60%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #d0cdda81;
+    background-color: #30313156;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    margin-left: 1000px;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: #000000cc;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+
+  .container_dots {
+      grid-column: 3/4;
+      grid-row: 4/5;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+
+  .footer {
+    grid-column: 3/4;
+    grid-row: 9/10;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 1px;
+}
