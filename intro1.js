@@ -1,7 +1,7 @@
 // function([string1, string2],target id,[color1,color2])    
 var tekst1 = "Hello World.";
 var tekst2 = "Console Text";
-var tekst3 = "<script="+ &#34 +
+// var tekst3 = "<script="+ &#34 +
 consoleText(['Hello World.', 'Console Text', 'function();'], 'text',['tomato','darkviolet','lightblue']);
 
 function consoleText(words, id, colors) {
