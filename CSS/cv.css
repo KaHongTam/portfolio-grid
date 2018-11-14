@@ -90,7 +90,7 @@ li a:hover {
     grid-row: 5/6;
     display: grid;
     grid-template-columns: 5% 150px 5% 2% 1fr 25%;
-    grid-template-rows: 8% 150px 5% 75% 5%;
+    grid-template-rows: 8% 150px 5% 75%;
     margin-top: 0;
     margin-left: 0;
     background-color: #53484867;
@@ -150,6 +150,44 @@ li a:hover {
     background-color: #61738175;
     align-self: center;
     text-decoration: none;
+    color: #f5f5dc;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.employer {
+    grid-column: 6/7;
+    grid-row: 2/5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 33% 33% 33%;
+}
+
+.employer .tp {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(../Images/employer_teleperformance.png);
+    background-size: cover;
+    border-bottom-left-radius: 20px;
+}
+
+.employer .tp1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-image: url(../Images/employer_teleperformance.png);
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.employer .cz {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-image: url(../Images/employer_cz.png);
+    background-size: cover;
+    border-top-left-radius: 20px;
 }
 
 .footer {
