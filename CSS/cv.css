@@ -127,11 +127,6 @@ li a:hover {
     border-top-left-radius: 30px;
 }
 
-/* .content1 .employer {
-    grid-template-columns: 
-    grid-template-rows: 1fr 1fr 1fr;
-} */
-
 .contact {
     grid-column: 2/3;
     grid-row: 4/5;
@@ -150,11 +145,11 @@ li a:hover {
     padding-bottom: 5%;
 }
 
-.content2 p {
+.content2 a {
     display:inline-block;
-    font-size: 16px;
     background-color: #61738175;
     align-self: center;
+    text-decoration: none;
 }
 
 .footer {
@@ -173,7 +168,7 @@ h1 {
 }
 
 p {
-    font-size: 23px;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
     padding-left: 20px;
