@@ -2,8 +2,9 @@
 var tekst1 = "Hello World.";
 var tekst2 = "Console Text";
 var tekst3 = "function typeWriter(); {";
+var tekst4 = "transition: transform 0.5s;"
 
-consoleText([tekst1, tekst2, tekst3], 'text',['tomato','darkviolet','lightblue']);
+consoleText([tekst1, tekst2, tekst3, tekst4], 'text',['tomato','darkviolet','lightblue', 'white']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
