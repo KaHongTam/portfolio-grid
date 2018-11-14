@@ -66,8 +66,6 @@ li a:hover {
     grid-row: 3/4;
     text-align: right;
     margin-right: 10px;
-    transition: opacity 1s;
-    opacity: 0.4;
 }
 
 .social img {
@@ -75,8 +73,13 @@ li a:hover {
     width: 50px;
 }
 
-.social:hover {
-    transition: opacity 1s;
+.icon {
+    transition: opacity 0.8s;
+    opacity: 0.4;
+}
+
+ .icon:hover {
+    transition: opacity 0.8s;
     opacity: 1;
 }
 

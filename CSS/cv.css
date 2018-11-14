@@ -2,6 +2,7 @@ body {
     margin: 0; 
     height: 100%; 
     overflow: hidden;
+    font-family: 'Stint Ultra Expanded', cursive;
 }
 
 .container {
@@ -11,33 +12,22 @@ body {
     grid-template-columns: 1fr 10% 1000px 10% 1fr;
     grid-template-rows: 50px 50px 50px 20px 1fr 50px 30px;
     grid-gap: 2px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: url(Images/background_tafeltennis.jpg);
+    background-image: url(../Images/background_code.jpg);
     background-size: cover;
-}
-
-/* Het tonen van de grid */
-/* .griddisplay {
-    border-width: 1px;
-    border-style: solid;
-} */
-
-.icoon {
-    grid-column: 4/5;
-    grid-row: 2/4;
 }
 
 .nav {
     grid-column: 3/4;
     grid-row: 3/4;
-    border-radius: 1px;
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
-    overflow: hidden;
+    border-color: #00000038;
     font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
     text-align: center;
-    background-color: #70c9d42d;
+    background-color: #53484867;
 }
 
 ul {
@@ -48,44 +38,144 @@ ul {
 
 li {
     display: inline;
+    
 }
 
 li a{
     display: inline-block;
-    color: black;
-    padding: 14px 25px;
+    color: #f5f5dc;
+    padding: 15px 45px;
     text-decoration: none;
+    
 }
 
 li a:hover {
-    color: #000000;
-    background-color: #50303075;
+    color: #f5f5dc;
+    background-color: #61738175;
     border-radius: 5px;
 }
 
-.content1 {
-    grid-column: 2/5;
-    grid-row: 5/6;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-color: #ffe8e82d;
-    border-radius: 10px;
+.social {
+    grid-column: 5/6;
+    grid-row: 3/4;
+    text-align: right;
+    margin-right: 10px;
 }
 
-.pasfoto {
-    float: right;
-    margin-top: 10px;
-    margin-right: 30px;
-    width: 100px;
-    height: 100px;
+.social img {
+    height: 50px;
+    width: 50px;
 }
-h1 {
-    text-align: center;
+
+.icon {
+    transition: opacity 0.8s;
+    opacity: 0.4;
+}
+
+ .icon:hover {
+    transition: opacity 0.8s;
+    opacity: 1;
 }
 
 .footer {
     grid-column: 3/4;
     grid-row: 7/8;
-    font-size: 10px;
+    font-size: 13px;
     text-align: center;
+    letter-spacing: 1px;
+}
+
+.content1 {
+    grid-column: 2/5;
+    grid-row: 5/6;
+    display: grid;
+    grid-template-columns: 5% 150px 5% 2% 1fr 25%;
+    grid-template-rows: 8% 150px 5% 75% 5%;
+    margin-top: 0;
+    margin-left: 0;
+    background-color: #53484867;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #465a7c36;
+    color: #f5f5dc;
+    overflow: hidden;
+}
+
+.content1 .pasfoto {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content1 .banner {
+    grid-column: 4/7;
+    grid-row: 2/3;
+}
+
+.content1 .employer {
+    grid-column: 6/7;
+    grid-row: 2/5;
+    /* visibility: hidden; */
+}
+
+.content1 .innerborder {
+    grid-column: 4/7;
+    grid-row: 2/7;
+    background-color: #15315a67;
+    border-top-left-radius: 30px;
+}
+
+/* .content1 .employer {
+    grid-template-columns: 
+    grid-template-rows: 1fr 1fr 1fr;
+} */
+
+.contact {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    overflow: visible;
+}
+
+.content2 {
+    grid-column: 5/6;
+    grid-row: 2/5;
+    /* background-color: azure; */
+    overflow: auto;
+    text-overflow: hidden;
+    display:grid;
+    justify-content: center;
+    align-content: stretch;
+    padding-bottom: 5%;
+}
+
+.content2 p {
+    display:inline-block;
+    font-size: 16px;
+    background-color: #61738175;
+    align-self: center;
+}
+
+.footer {
+    grid-column: 3/4;
+    grid-row: 7/8;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h1 {
+    text-align: center;
+    color: #f5f5dc;
+    font-size: 40;
+    font-weight: bold;
+}
+
+p {
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-left: 20px;
+    padding-right:20px;
 }
