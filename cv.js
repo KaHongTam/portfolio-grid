@@ -1,32 +1,32 @@
 $(document).ready(function(){
-    $(".tp").hide();
-    $(".tp1").hide();
-    $(".cz").hide();
+     $(".tp img").hide();
+    $(".tp1 img").hide();
+    $(".cz img").hide();
     
     $(".experience_tp").on({
         mouseenter: function(){
-            $(".tp").fadeIn(350);
+            $(".tp img").fadeIn(350);
         },  
         mouseleave: function(){
-            $(".tp").fadeOut(650);
+            $(".tp img").fadeOut(650);
         }, 
     });
 
     $(".experience_tp1").on({
         mouseenter: function(){
-            $(".tp1").fadeIn(350);
+            $(".tp1 img").fadeIn(350);
         },  
         mouseleave: function(){
-            $(".tp1").fadeOut(650);
+            $(".tp1 img").fadeOut(650);
         }, 
     });
 
     $(".experience_cz").on({
         mouseenter: function(){
-            $(".cz").fadeIn(350);
+            $(".cz img").fadeIn(350);
         },  
         mouseleave: function(){
-            $(".cz").fadeOut(650);
+            $(".cz img").fadeOut(650);
         }, 
     });
 

@@ -163,31 +163,42 @@ a:visited {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 33% 33% 33%;
+    grid-gap: 2px;
 }
 
 .employer .tp {
     grid-column: 1/2;
     grid-row: 1/2;
-    background-image: url(../Images/employer_teleperformance.png);
-    background-size: cover;
-    border-bottom-left-radius: 20px;
+    background-color: #61738175;
+    border-bottom-left-radius: 30px;
+}
+
+.employer .tp img {
+    border-bottom-left-radius: 30px;
 }
 
 .employer .tp1 {
     grid-column: 1/2;
     grid-row: 2/3;
-    background-image: url(../Images/employer_teleperformance.png);
-    background-size: cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    background-color: #61738175;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.employer .tp1 img {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 .employer .cz {
     grid-column: 1/2;
     grid-row: 3/4;
-    background-image: url(../Images/employer_cz.png);
-    background-size: cover;
-    border-top-left-radius: 20px;
+    background-color: #61738175;
+    border-top-left-radius: 30px;
+}
+
+.employer .cz img {
+    border-top-left-radius: 30px;
 }
 
 .footer {
