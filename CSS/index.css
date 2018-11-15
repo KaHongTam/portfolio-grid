@@ -86,7 +86,9 @@ li a:hover {
     border-style: solid;
     border-width: 1px;
     border-color: #00000038;
-    color: #f5f5dc;
+    color: #ffffff;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .content1 a {
@@ -95,7 +97,7 @@ li a:hover {
 }
 
 a:visited {
-    color: #f5f5dc;
+    color: #ffffff;
     text-decoration: underline;
 }
 
@@ -106,12 +108,19 @@ h1 {
     font-weight: bold;
 }
 
-p {
-    font-size: 23px;
+h2 {
+    font-size: 30px;
     font-weight: bold;
-    letter-spacing: 1px;
     padding-left: 20px;
     padding-right:20px;
+}
+
+p {
+    font-size: 23px;
+    /* font-weight: bold; */
+    padding-left: 20px;
+    padding-right:20px;
+    text-align: justify;
 }
 
 .footer {
