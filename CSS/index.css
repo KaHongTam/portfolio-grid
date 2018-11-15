@@ -16,12 +16,6 @@ body {
     background-size: cover;
 }
 
-/* Het tonen van de grid */
-/* .griddisplay {
-    border-width: 1px;
-    border-style: solid;
-} */
-
 .nav {
     grid-column: 3/4;
     grid-row: 3/4;
@@ -93,6 +87,16 @@ li a:hover {
     border-width: 1px;
     border-color: #00000038;
     color: #f5f5dc;
+}
+
+.content1 a {
+    text-decoration: underline;
+    
+}
+
+a:visited {
+    color: #f5f5dc;
+    text-decoration: underline;
 }
 
 h1 {
