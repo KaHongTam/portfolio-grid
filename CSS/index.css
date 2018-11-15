@@ -123,6 +123,11 @@ p {
     text-align: justify;
 }
 
+video {
+    width: 100%;
+    margin: 0px;
+}
+
 .footer {
     grid-column: 3/4;
     grid-row: 7/8;
