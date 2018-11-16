@@ -1,21 +1,47 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: #53484867;
+    z-index: 500;
+}
+
+/* breedte van de container */
 .container {
     max-width: 960px;
     margin: 0 auto;
   }
+
+  /* lettertype stuk tekst h2 */
   section.section h2 {
     margin-bottom: 40px;
     font-family: "Roboto Slab", serif;
     font-size: 30px;
+    z-index: 100;
   }
+
+  /* lettertype stuk tekst p */
   section.section p {
     margin-bottom: 40px;
     font-size: 16px;
     font-weight: 300;
   }
 
+  /* stukken tekst onder de background */
   section.section.content {
     padding: 40px 0;
+    background-color: white;
+    z-index: 50;
   }
+
+  /* grootte van de achtergrond en ervoor zorgen dat het niet meescrollt */
   section.section.parallax {
     height: 600px;
     background-position: 50% 50%;
@@ -23,6 +49,8 @@
     background-attachment: fixed;
     background-size: cover;
   }
+
+  /* kleur van de tekst dat op de background zit */
   section.section.parallax h1 {
     color: rgba(255, 255, 255, 0.8);
     font-size: 48px;
@@ -32,29 +60,26 @@
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
+
+  /* achtergrondplaatje 1 */
   section.section.parallax-1 {
     background-image: url("Images/parallax/background_abstract1.jpg");
   }
+  
+  /* achtergrondplaatje 2 */
   section.section.parallax-2 {
     background-image: url("Images/parallax/background_abstract2.jpg");
+    z-index: 1;
   }
+
+  /* achtergrondplaatje 3 */
   section.section.parallax-3 {
     background-image: url("Images/parallax/background_abstract3.jpg");
   }
-  /* @media all and (min-width: 600px) {
-    section.section h2 {
-      font-size: 42px;
-    } */
     section.section p {
       font-size: 20px;
     }
     section.section.parallax h1 {
       font-size: 96px;
     }
-  }
-  /* @media all and (min-width: 960px) {
-    section.section.parallax h1 {
-      font-size: 160px;
-    }
-  } */
   

@@ -16,12 +16,6 @@ body {
     background-size: cover;
 }
 
-/* Het tonen van de grid */
-/* .griddisplay {
-    border-width: 1px;
-    border-style: solid;
-} */
-
 .nav {
     grid-column: 3/4;
     grid-row: 3/4;
@@ -96,7 +90,7 @@ li a:hover {
 }
 
 .mySlides:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
     opacity: 0.95;
 }
   
